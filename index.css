@@ -1,0 +1,6 @@
+body{
+    left: 50px;
+    top: 50px;
+    position:absolute;
+    user-select: none;
+}

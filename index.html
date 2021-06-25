@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRG coords</title>
+
+    <link rel="stylesheet" href="index.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+    <!--user input-->
+    <input type="text" id="INPUT" class="form-label"><br>
+
+    <!--necessary input box for the module to work-->
+    <input type="text" value="/execute in minecraft:the_nether run tp @s 0 60 0" id="command" class="form-label" readonly><br>
+
+    <button id="gen" onclick="copy()" class="btn btn-primary">Generate</button>
+
+    <!--Invisible button to automatically copy-->
+    <button id="copy" data-clipboard-target="#command"></button>
+    <p></p><br>
+    <h6>
+        So this is a helpful tool to play a minecraft speedrunning category called SRG(Scouting and routing glitchless%)<br>
+        So when u r performing the blind travel in this category u want to blind straight into the portal room<br>
+        and as 1 block in the nether is 8 blocks in the overworld<br>
+        So u want to divide the portal room coords by 8 and then make a blind at that coords<br>
+        this manually takes a lot of time hence wasting the routing time and this tool helps there.<br>
+         <br>
+        So to use this tool:-<br>
+        stand in the portal room press f3+c and then paste in the first input<br>
+        then press Enter or press the Generate button a command will automatically be copied to your clipboard<br>
+        by using that command u will teleport to the exact blind travel coords in the nether.<br>
+        <br>
+        ©Made By AabhasDanger#4846<br>
+    </h6>
+
+    <!--Importing ClipboardJS lib-->
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+
+    <script src="index.js"></script>
+</body>
+</html>
